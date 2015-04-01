@@ -285,6 +285,9 @@ img {
 .action:last-child {
   margin: 0;
 }
+.action.gray {
+  color: #818181;
+}
 .actions {
   position: absolute;
   bottom: 0;
@@ -322,14 +325,32 @@ img {
 .padding {
   padding: 1em;
 }
+.padding-tb {
+  padding: 1em;
+}
 .progress {
   margin: 1em 0;
+  position: relative;
+}
+.progress .min,
+.progress .max {
+  font-size: 0.8em;
+  top: -5px;
+}
+.progress .min {
+  position: absolute;
+  left: 0;
+}
+.progress .max {
+  position: absolute;
+  right: 0;
 }
 .progress .total {
-  height: 5px;
   background: #818181;
-  width: 100%;
   border-radius: 5px;
+  height: 5px;
+  margin: 0 auto;
+  width: 75%;
 }
 .progress .state {
   height: 5px;

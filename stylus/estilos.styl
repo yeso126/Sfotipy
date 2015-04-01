@@ -32,6 +32,8 @@ img
 	font-size 1.2em
 	&:last-child
 		margin 0 
+.action.gray
+		color gris_claro
 .actions
 	position absolute
 	bottom 0
@@ -58,13 +60,28 @@ img
 	position relative
 .padding
 	padding 1em
+.padding-tb
+	padding 1em
 .progress 
 	margin 1em 0 
+	position relative
+	.min
+	.max
+		font-size .8em
+		top -5px
+	.min
+		position absolute
+		left 0
+	.max
+		position absolute
+		right 0 
+
 	.total
-		height 5px
 		background gris_claro
-		width 100% 
 		border-radius 5px
+		height 5px
+		margin 0 auto
+		width 75% 
 	.state
 		height 5px
 		background rojo
