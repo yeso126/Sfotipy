@@ -328,6 +328,19 @@ img {
 .padding-tb {
   padding: 1em;
 }
+.left {
+  float: left;
+}
+.right {
+  float: right;
+}
+.wrap {
+  width: 1000px;
+}
+.round {
+  border-radius: 50%;
+  overflow: hidden;
+}
 .progress {
   margin: 1em 0;
   position: relative;
@@ -395,4 +408,52 @@ img {
 }
 .small {
   width: 20em;
+}
+@media screen and (min-width: 480px) {
+  .song:nth-child(even) {
+    margin-right: 1em;
+  }
+  .image img {
+    width: 100%;
+    height: auto;
+  }
+  .playing.medium {
+    width: auto;
+  }
+}
+@media screen and (min-width: 1000px) {
+  .button-menu {
+    display: none;
+  }
+  .header {
+    height: auto;
+  }
+  .header .title {
+    display: none;
+  }
+  .isotipo {
+    width: 122px;
+  }
+  .logo {
+    padding: 1.3em 0;
+    overflow: hidden;
+  }
+  .avatar {
+    width: 38px;
+    height: 38px;
+  }
+  .username {
+    color: #818181;
+    position: relative;
+    top: 9px;
+    margin-left: 0.5em;
+  }
+  .username:after {
+    border-left: 7px solid transparent;
+    border-right: 7px solid transparent;
+    border-top: 10px solid #818181;
+    content: "";
+    display: inline-block;
+    margin-left: 0.4em;
+  }
 }
