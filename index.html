@@ -4,7 +4,7 @@
 	<meta charset="UTF-8">
 	<title>Document</title>
 	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-	<link href='http://fonts.googleapis.com/css?family=Varela+Round' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Varela+Round' rel='stylesheet' type='text/css'>
 	<script src="js/prefixfree.min.js"></script>
 	<link rel="stylesheet" href="css/estilos.css">
 </head>
@@ -315,8 +315,20 @@
 			</p>
 		</article>
 	</section>
-	<script scr="lib/underscore.js"></script>
+	<script id="song-template" type="text/xhandlebars-template" >
+		<span>
+				{{name}} - {{author}}
+		</span>
+			<span class="right">
+				<a href="" class="action icon-add gray"></a>
+				<a href="" class="action icon-love gray"></a>
+				<a href="" class="action icon-share gray"></a>
+			</span>
+	</script>
+	<script src="lib/underscore.js"></script>
 	<script src="lib/jquery-1.11.2.js"></script>
 	<script src="lib/backbone.js"></script>
+	<script src="lib/handlebars-v3.0.1.js"></script>
+	<script src="js/main.js"></script>
 </body>
 </html>
